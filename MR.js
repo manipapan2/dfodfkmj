@@ -5,7 +5,7 @@ loginbtn.addEventListener("click" , check);
 
 
 function check(){
-    if(nameId.value == "manipapan2" && passId.value == "vvvvv00000" ){
+    if(nameId.value == "manipapan2" && passId.value == "vvvvv00000" || nameId.value == "maral abdi" && passId.value == "zertzert" || nameId.value == "burny souls" && passId.value == "zertzert"){
         loginbtn.style.pointerEvents="none";
         loginbtn.style.cursor="none";
         loginbtn.style.background="transparent";
@@ -21,8 +21,17 @@ function check(){
 
 function asli(){
     if(nameId.value == "admin" && passId.value == "12345678"){
-        alert("");
         document.getElementById("audio").play();
+        document.getElementById("datab").style.display="none";
+        document.getElementById("seasons").style.display="flex";
     }
 
+}
+
+
+function show(){
+    document.getElementById("audio").pause();
+    document.getElementById("seasons").style.display="none";
+    
+    document.getElementById("film1").style.display="flex";
 }
