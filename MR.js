@@ -5,7 +5,7 @@ loginbtn.addEventListener("click" , check);
 
 
 function check(){
-    if(nameId.value == "manipapan2" && passId.value == "vvvvv00000" || nameId.value == "maral abdi" && passId.value == "zertzert" || nameId.value == "burny souls" && passId.value == "zertzert"){
+    if(nameId.value == "manipapan2" && passId.value == "vvvvv00000" ){
         loginbtn.style.pointerEvents="none";
         loginbtn.style.cursor="none";
         loginbtn.style.background="transparent";
@@ -15,7 +15,7 @@ function check(){
         passId.addEventListener("keyup" , asli);
     }
     else{
-        alert("bad");
+        alert("invalid username or password");
     }
 }
 
