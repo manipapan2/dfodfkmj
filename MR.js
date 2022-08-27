@@ -21,7 +21,7 @@ function check(){
 
 function asli(){
     if(nameId.value == "admin" && passId.value == "12345678"){
-        alert("NOW");
+        alert("");
         document.getElementById("audio").play();
     }
 
