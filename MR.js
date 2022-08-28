@@ -2,10 +2,11 @@ var nameId = document.getElementById("nameId");
 var passId = document.getElementById("passId");
 var loginbtn = document.getElementById("login-button");
 loginbtn.addEventListener("click" , check);
+document.getElementById("season1").addEventListener("click" , show)
 
 
 function check(){
-    if(nameId.value == "manipapan2" && passId.value == "vvvvv00000" || nameId.value == "maral abdi" && passId.value == "zertzert" || nameId.value == "burny souls" && passId.value == "zertzert"){
+    if(nameId.value == "manipapan2" && passId.value == "vvvvv00000" || nameId.value == "maral_abdi" && passId.value == "zertzort" || nameId.value == "burny_souls" && passId.value == "zertzort"){
         loginbtn.style.pointerEvents="none";
         loginbtn.style.cursor="none";
         loginbtn.style.background="transparent";
@@ -30,8 +31,14 @@ function asli(){
 
 
 function show(){
-    document.getElementById("audio").pause();
-    document.getElementById("seasons").style.display="none";
+    document.getElementById("season1").style.display="none";
+    document.getElementById("season2").style.display="none";
+    document.getElementById("season3").style.display="none";
+    document.getElementById("season4").style.display="none";
+    document.getElementById("seasons").style.width="1400px";
+    const nodeList = document.querySelectorAll(".season1");
+    for (let i = 0; i < nodeList.length; i++) {
+    nodeList[i].style.display = "flex";
+    }
     
-    document.getElementById("film1").style.display="flex";
 }

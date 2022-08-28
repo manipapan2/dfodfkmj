@@ -10,12 +10,10 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
 body{
     
 }
+
 
 .bodyFake{
     top: 0;
@@ -30,6 +28,23 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+p{
+    margin-bottom: 0;
+    margin-top: 40px;
+    margin-left: 13px;
+    width:100px;
+    height: 30px;
+    color: rgb(224, 10, 10);
+    font-weight: bolder;
+    font-size: 15px;
 }
 
 
@@ -102,22 +117,116 @@ input::placeholder{
 
 
 .seasons{
-    margin-right: 600px;
-    margin-top: 200px;
+    bottom: 0;
     display: none;
-    width: 200px;
-    height:70px;
+    margin-top: 300px;
+    width: 700px;
+    height:300px;
+    box-sizing: border-box;
     border-radius: 5px;
+    align-items: flex-end;
+    
+}
+
+
+.seasonall{
+    display: flex;
+    width: 500px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 5px;
+    border: white 2px solid;
+    cursor: pointer;
     background-image: url(download.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
     pointer-events: painted;
 }
 
 
-.seasons1{
+.seasonall:hover{
+    animation: out 100ms forwards;
 }
+
+@keyframes out {
+    100%{
+        outline: 5px solid white;
+    }
+}
+
+
+.season1{
+    display: none;
+    width: 100px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 5px;
+    border: white 2px solid;
+    cursor: pointer;
+    background-image: url(download.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: painted;
+}
+
+
+.season1:hover{
+    animation: outl 100ms forwards;
+}
+
+@keyframes outl {
+    100%{
+        outline: 5px solid white;
+    }
+}
+
+
+.season2{
+    display: none;
+    width: 500px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 5px;
+    border: white 2px solid;
+    cursor: pointer;
+    background-image: url(/MR.files/download.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: painted;
+}
+
+
+.season3{
+    display: none;
+    width: 500px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 5px;
+    border: white 2px solid;
+    cursor: pointer;
+    background-image: url(/MR.files/download.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: painted;
+}
+
+
+.season4{
+    display: none;
+    width: 500px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 5px;
+    border: white 2px solid;
+    cursor: pointer;
+    background-image: url(/MR.files/download.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: painted;
+}
+
