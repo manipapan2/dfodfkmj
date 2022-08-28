@@ -42,3 +42,12 @@ function show(){
     }
     
 }
+
+
+function vid(){
+    const nodeList = document.querySelectorAll(".season1");
+    for (let i = 0; i < nodeList.length; i++) {
+    nodeList[i].style.display = "none";
+    }
+    document.getElementById("vid").style.display="flex";
+}
