@@ -10,10 +10,12 @@
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 body{
     
 }
-
 
 .bodyFake{
     top: 0;
@@ -27,6 +29,7 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 200;
 
 }
 
@@ -39,7 +42,7 @@ a{
 p{
     margin-bottom: 0;
     margin-top: 40px;
-    margin-left: 13px;
+    margin-left: 10px;
     width:100px;
     height: 30px;
     color: rgb(224, 10, 10);
@@ -119,6 +122,7 @@ input::placeholder{
 .seasons{
     bottom: 0;
     display: none;
+    flex-direction: flex;
     margin-top: 300px;
     width: 700px;
     height:300px;
@@ -156,8 +160,79 @@ input::placeholder{
 }
 
 
-.season1{
+.s1{
     display: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    
+}
+
+
+.s2{
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    
+}
+
+
+.s3{
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    
+}
+
+
+.s4{
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    
+}
+
+
+.season1{
+    display: flex;
+    width: 100px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 5px;
+    border: white 2px solid;
+    cursor: pointer;
+    background-image: url(download.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: painted;
+    z-index: 1;
+}
+
+
+.season2{
+    display: flex;
+    width: 80px;
+    height: 70px;
+    margin: 24px;
+    border-radius: 5px;
+    border: white 2px solid;
+    cursor: pointer;
+    background-image: url(download.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: painted;
+}
+
+
+
+
+.season3{
+    display: flex;
     width: 100px;
     height: 70px;
     margin: 20px;
@@ -172,61 +247,88 @@ input::placeholder{
 }
 
 
-.season1:hover{
-    animation: outl 100ms forwards;
+.season4{
+    display: flex;
+    width: 60px;
+    height: 70px;
+    margin: 24px;
+    border-radius: 5px;
+    border: white 2px solid;
+    cursor: pointer;
+    background-image: url(download.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: painted;
 }
 
-@keyframes outl {
+
+.season1:hover{
+    animation: ou 100ms forwards;
+}
+
+@keyframes ou {
     100%{
         outline: 5px solid white;
     }
 }
 
 
-.season2{
+.divB{
     display: none;
-    width: 500px;
-    height: 70px;
-    margin: 20px;
-    border-radius: 5px;
-    border: white 2px solid;
-    cursor: pointer;
-    background-image: url(/MR.files/download.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    pointer-events: painted;
+    width: 100%;
+    height: 60px;
+    align-content: center;
+    justify-content: center;
+
 }
 
 
-.season3{
-    display: none;
-    width: 500px;
-    height: 70px;
-    margin: 20px;
-    border-radius: 5px;
-    border: white 2px solid;
-    cursor: pointer;
-    background-image: url(/MR.files/download.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    pointer-events: painted;
+.divB button{
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
-.season4{
-    display: none;
-    width: 500px;
-    height: 70px;
-    margin: 20px;
-    border-radius: 5px;
-    border: white 2px solid;
-    cursor: pointer;
-    background-image: url(/MR.files/download.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    pointer-events: painted;
+.divB button:hover{
+    animation: dd 5s infinite linear;
+
 }
 
+@keyframes dd {
+    
+    
+}
+
+
+.mute{
+    display: none;
+    top: 30px;
+    right: 30px;
+    z-index: 300;
+
+}
+
+.mute button{
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: rgb(64, 25, 204);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.mute button:hover{
+
+}
