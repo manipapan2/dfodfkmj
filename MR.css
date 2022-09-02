@@ -273,6 +273,36 @@ input::placeholder{
     }
 }
 
+.season2:hover{
+    animation: o 100ms forwards;
+}
+
+@keyframes o {
+    100%{
+        outline: 5px solid white;
+    }
+}
+
+.season3:hover{
+    animation: ouh 100ms forwards;
+}
+
+@keyframes ouh {
+    100%{
+        outline: 5px solid white;
+    }
+}
+
+.season4:hover{
+    animation: ouh 100ms forwards;
+}
+
+@keyframes ouc {
+    100%{
+        outline: 5px solid white;
+    }
+}
+
 
 .divB{
     display: none;
