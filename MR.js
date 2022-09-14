@@ -37,13 +37,15 @@ function asli(){
 
 
 function back(){
+    document.getElementById("seasons").style.marginBottom="40";
     document.getElementById("seasons").style.display="flex";
     document.getElementById("seasons").style.flexDirection="row";
     document.getElementById("season1").style.display="flex";
     document.getElementById("season2").style.display="flex";
     document.getElementById("season3").style.display="flex";
     document.getElementById("season4").style.display="flex";
-    document.getElementById("seasons").style.width="700px";
+    document.getElementById("seasons").style.width="50%";
+    document.getElementById("seasons").style.marginBottom="40px";
     document.getElementById("s1").style.display="none";
     document.getElementById("s2").style.display="none";
     document.getElementById("s3").style.display="none";
@@ -58,8 +60,10 @@ function show(){
     document.getElementById("season2").style.display="none";
     document.getElementById("season3").style.display="none";
     document.getElementById("season4").style.display="none";
-    document.getElementById("seasons").style.width="1400px";
-    document.getElementById("s1").style.display="flex";
+    document.getElementById("seasons").style.width="100%";
+    document.getElementById("seasons").style.marginBottom="0";
+    document.getElementById("s1").style.display="grid";
+    document.getElementById("s1").style.margin="auto";
     document.getElementById("seasons").style.flexDirection="column";
     document.getElementById("divB").style.display="flex";
 
@@ -71,8 +75,10 @@ function show2(){
     document.getElementById("season2").style.display="none";
     document.getElementById("season3").style.display="none";
     document.getElementById("season4").style.display="none";
-    document.getElementById("seasons").style.width="1400px";
-    document.getElementById("s2").style.display="flex";
+    document.getElementById("seasons").style.width="100%";
+    document.getElementById("seasons").style.marginBottom="0";
+    document.getElementById("s2").style.display="grid";
+    document.getElementById("s2").style.margin="auto";
     document.getElementById("seasons").style.flexDirection="column";
     document.getElementById("divB").style.display="flex";
     
@@ -85,8 +91,10 @@ function show3(){
     document.getElementById("season2").style.display="none";
     document.getElementById("season3").style.display="none";
     document.getElementById("season4").style.display="none";
-    document.getElementById("seasons").style.width="1400px";
-    document.getElementById("s3").style.display="flex";
+    document.getElementById("seasons").style.width="100%";
+    document.getElementById("seasons").style.marginBottom="0";
+    document.getElementById("s3").style.display="grid";
+    document.getElementById("s3").style.margin="auto";
     document.getElementById("seasons").style.flexDirection="column";
     document.getElementById("divB").style.display="flex";
 }
@@ -97,8 +105,10 @@ function show4(){
     document.getElementById("season2").style.display="none";
     document.getElementById("season3").style.display="none";
     document.getElementById("season4").style.display="none";
-    document.getElementById("seasons").style.width="1400px";
-    document.getElementById("s4").style.display="flex";
+    document.getElementById("seasons").style.width="100%";
+    document.getElementById("seasons").style.marginBottom="0";
+    document.getElementById("s4").style.display="grid";
+    document.getElementById("s4").style.margin="auto";
     document.getElementById("seasons").style.flexDirection="column";
     document.getElementById("divB").style.display="flex";
 }

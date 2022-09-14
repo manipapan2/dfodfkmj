@@ -21,7 +21,7 @@ body{
     top: 0;
     left: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -29,13 +29,15 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 200;
 
 }
 
 
 a{
     text-decoration: none;
+    width: 150px;
+    height: 70px;
+    
 }
 
 
@@ -120,24 +122,24 @@ input::placeholder{
 
 
 .seasons{
-    bottom: 0;
     display: none;
-    flex-direction: flex;
-    margin-top: 300px;
-    width: 700px;
-    height:300px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-auto-rows: 60px;
+    width: 50%;
+    margin-bottom: 40px;
     box-sizing: border-box;
     border-radius: 5px;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
     
 }
 
 
 .seasonall{
     display: flex;
-    width: 500px;
+    width: auto;
     height: 70px;
-    margin: 20px;
+    margin: auto;
     border-radius: 5px;
     border: white 2px solid;
     cursor: pointer;
@@ -162,45 +164,62 @@ input::placeholder{
 
 .s1{
     display: none;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    grid-auto-rows: 100px;
     width: 100%;
-    height: 100%;
-    padding-top: 200px;
+    height: 10%;
+    align-items: center;
+    margin: auto;
+    justify-items: center;
+
     
 }
 
 
 .s2{
     display: none;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    grid-auto-rows: 100px;
     width: 100%;
-    height: 100%;
-    padding-top: 200px;
-    
+    height: 10%;
+    align-items: center;
+    margin: auto;
+    justify-items: center;
 }
 
 
 .s3{
     display: none;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    grid-auto-rows: 100px;
     width: 100%;
-    height: 100%;
-    padding-top: 200px;
+    height: 10%;
+    align-items: center;
+    margin: auto;
+    justify-items: center;
     
 }
 
 
 .s4{
     display: none;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    grid-auto-rows: 100px;
     width: 100%;
-    height: 100%;
-    padding-top: 200px;
+    height: 10%;
+    align-items: center;
+    margin: auto;
+    justify-items: center;
     
 }
 
 
 .season1{
-    display: flex;
-    width: 100px;
+    display: grid;
+    margin: auto;
+    /* margin-left: 50px; */
+    width: 150px;
     height: 70px;
-    margin: 20px;
     border-radius: 5px;
     border: white 2px solid;
     cursor: pointer;
@@ -209,15 +228,15 @@ input::placeholder{
     background-size: cover;
     background-repeat: no-repeat;
     pointer-events: painted;
-    z-index: 1;
 }
 
 
 .season2{
-    display: flex;
-    width: 80px;
+    display: grid;
+    margin: auto;
+    /* margin-left: 50px; */
+    width: 150px;
     height: 70px;
-    margin: 24px;
     border-radius: 5px;
     border: white 2px solid;
     cursor: pointer;
@@ -232,10 +251,11 @@ input::placeholder{
 
 
 .season3{
-    display: flex;
-    width: 100px;
+    display: grid;
+    margin: auto;
+    /* margin-left: 50px; */
+    width: 150px;
     height: 70px;
-    margin: 20px;
     border-radius: 5px;
     border: white 2px solid;
     cursor: pointer;
@@ -248,10 +268,11 @@ input::placeholder{
 
 
 .season4{
-    display: flex;
-    width: 60px;
+    display: grid;
+    margin: auto;
+    /* margin-left: 50px; */
+    width: 150px;
     height: 70px;
-    margin: 24px;
     border-radius: 5px;
     border: white 2px solid;
     cursor: pointer;
@@ -308,6 +329,7 @@ input::placeholder{
     display: none;
     width: 100%;
     height: 60px;
+    margin-bottom: 20px;
     align-content: center;
     justify-content: center;
 
@@ -328,13 +350,8 @@ input::placeholder{
 
 
 .divB button:hover{
-    animation: dd 5s infinite linear;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
-}
-
-@keyframes dd {
-    
-    
 }
 
 
