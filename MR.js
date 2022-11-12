@@ -1,13 +1,18 @@
 var nameId = document.getElementById("nameId");
 var passId = document.getElementById("passId");
 var loginbtn = document.getElementById("login-button");
+loginbtn.addEventListener("mouseover" , hovering);
 loginbtn.addEventListener("click" , check);
 document.getElementById("season1").addEventListener("click" , show)
 document.getElementById("season2").addEventListener("click" , show2)
 document.getElementById("season3").addEventListener("click" , show3)
 document.getElementById("season4").addEventListener("click" , show4)
 document.getElementById("back").addEventListener("click" , back)
+document.getElementById("mute").addEventListener("click" , pausemusic)
 
+setInterval(() => {
+    loginbtn.style.pointerEvents = "painted";
+}, 500);
 
 function check(){
     if(nameId.value == "manipapan2" && passId.value == "vvvvv00000" || nameId.value == "maral_abdi" && passId.value == "zertzort" || nameId.value == "burny_souls" && passId.value == "zertzort"){
@@ -29,7 +34,7 @@ function asli(){
         document.getElementById("audio").play();
         document.getElementById("datab").style.display="none";
         document.getElementById("seasons").style.display="flex";
-        document.getElementById("mute").style.display="none";
+        document.getElementById("mute").style.display="flex";
 
     }
 
@@ -111,4 +116,103 @@ function show4(){
     document.getElementById("s4").style.margin="auto";
     document.getElementById("seasons").style.flexDirection="column";
     document.getElementById("divB").style.display="flex";
+}
+
+
+
+function pausemusic(){
+    // document.getElementById("audio").pause();
+    // document.getElementById("muteB").innerHTML="Play";
+    if(document.getElementById("mp").innerHTML == "Mute Music"){
+        document.getElementById("audio").pause();
+        document.getElementById("mp").innerHTML = "Play Music";
+        document.getElementById("ggd").classList.add="gg-play";
+        document.getElementById("ggd").classList.remove="gg-play-pause-o";
+    }
+    else if(document.getElementById("mp").innerHTML == "Play Music"){
+        document.getElementById("audio").play();
+        document.getElementById("mp").innerHTML = "Mute Music";
+        document.getElementById("ggd").classList.remove="gg-play";
+        document.getElementById("ggd").classList.add="gg-play-pause-o";
+    }
+}
+
+// document.getElementById("audioop").play()
+function hovering(){
+    // if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(-85px, 0px)'){
+    //     loginbtn.style.transition = 'all 0.3s ease'
+    //     loginbtn.style.transform = 'translate(0px,0px)'
+    //     loginbtn.style.pointerEvents = "none"
+    // }
+
+    // if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(84px, 0px)'){
+    //     loginbtn.style.transition = 'all 0.3s ease'
+    //     loginbtn.style.transform = 'translate(-85px,0px)'
+    //     loginbtn.style.pointerEvents = "none"
+    // }
+
+    if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(-79px, 0px)'){
+        loginbtn.style.transition = 'all 0.3s ease'
+        loginbtn.style.transform = 'translate(-80px,0px)'
+        loginbtn.style.pointerEvents = "none"
+    }
+
+    if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(79px, 0px)'){
+        loginbtn.style.transition = 'all 0.3s ease'
+        loginbtn.style.transform = 'translate(-79px,0px)'
+        loginbtn.style.pointerEvents = "none"
+    }
+
+
+    if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(-80px, 0px)'){
+        loginbtn.style.transition = 'all 0.3s ease'
+        loginbtn.style.transform = 'translate(79px,0px)'
+        loginbtn.style.pointerEvents = "none"
+    }
+
+
+    if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(80px, 0px)'){
+        loginbtn.style.transition = 'all 0.3s ease'
+        loginbtn.style.transform = 'translate(-80px,0px)'
+        console.log(loginbtn.style.transform)
+        loginbtn.style.pointerEvents = "none"
+    }
+
+
+
+    if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == ''){
+    loginbtn.style.transition = 'all 0.3s ease'
+    loginbtn.style.transform = 'translate(80px,0px)'
+    loginbtn.style.pointerEvents = "none"
+        // console.log(loginbtn.style.transform)
+    }
+
+    if(document.getElementById("audioop").paused){
+        document.getElementById("audioop").play()
+    }
+
+    
+    
+
+
+
+    // if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(80px, 0px)'){
+    //     loginbtn.style.transition = 'all 0.3s ease'
+    //     loginbtn.style.transform = 'translate(-80px,0px)'
+    // }
+
+    // if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(-80px, 0px)'){
+    //     loginbtn.style.transition = 'all 0.3s ease'
+    //     loginbtn.style.transform = 'translate(80px,0px)'
+    // }
+
+    
+
+
+    
+
+    // let position;
+    // position ? (position = 0) : (position = 120)
+    // var okk = loginbtn.style.transform = 'translate(80px,0px)'
+    
 }
