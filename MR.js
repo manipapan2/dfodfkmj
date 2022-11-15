@@ -1,7 +1,7 @@
 var nameId = document.getElementById("nameId");
 var passId = document.getElementById("passId");
 var loginbtn = document.getElementById("login-button");
-loginbtn.addEventListener("mouseover" , hovering);
+loginbtn.addEventListener("click" , ghh);
 loginbtn.addEventListener("click" , check);
 document.getElementById("season1").addEventListener("click" , show)
 document.getElementById("season2").addEventListener("click" , show2)
@@ -10,12 +10,24 @@ document.getElementById("season4").addEventListener("click" , show4)
 document.getElementById("back").addEventListener("click" , back)
 document.getElementById("mute").addEventListener("click" , pausemusic)
 
+
+
 setInterval(() => {
     loginbtn.style.pointerEvents = "painted";
 }, 500);
 
 function check(){
+
+    if(nameId.value != "" && passId.value != ""){
+        check2()
+    }
+
+}
+
+
+function check2(){
     if(nameId.value == "manipapan2" && passId.value == "vvvvv00000" || nameId.value == "maral_abdi" && passId.value == "zertzort" || nameId.value == "burny_souls" && passId.value == "zertzort"){
+        document.getElementById("audioBest").pause()
         loginbtn.style.pointerEvents="none";
         loginbtn.style.cursor="none";
         loginbtn.style.background="transparent";
@@ -24,8 +36,9 @@ function check(){
         nameId.addEventListener("keyup" , asli);
         passId.addEventListener("keyup" , asli);
     }
+
     else{
-        alert("invalid username or password");
+        alert("Invalid Username Or Password")
     }
 }
 
@@ -137,82 +150,75 @@ function pausemusic(){
     }
 }
 
-// document.getElementById("audioop").play()
+
+function ghh(){
+    if(nameId.value === "" || passId.value === "" && loginbtn.style.transform == "translate(0px, 0px)"  || loginbtn.style.transform == 'translate(0px, 0px)'){
+        loginbtn.style.transition = 'all 0.3s ease'
+        loginbtn.style.transform = 'translate(80px,0px)'
+        loginbtn.style.pointerEvents = "none"
+        document.getElementById("audioBest").play()
+        loginbtn.addEventListener("mouseover" , hovering);
+    }
+
+    else{
+        console.log(nameId.value)
+    }
+
+}
+
+
+function inpug(){
+    if(nameId.value != "" && passId.value != "" && loginbtn.style.transform != 'translate(0px, 0px)' || loginbtn.style.transform != 'translate(0px, 0px)'){
+        loginbtn.style.transform = 'translate(0px, 0px)'
+        loginbtn.style.pointerEvents = "painted"
+        
+    }
+}
+
+
 function hovering(){
-    // if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(-85px, 0px)'){
-    //     loginbtn.style.transition = 'all 0.3s ease'
-    //     loginbtn.style.transform = 'translate(0px,0px)'
-    //     loginbtn.style.pointerEvents = "none"
-    // }
 
-    // if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(84px, 0px)'){
-    //     loginbtn.style.transition = 'all 0.3s ease'
-    //     loginbtn.style.transform = 'translate(-85px,0px)'
-    //     loginbtn.style.pointerEvents = "none"
-    // }
 
-    if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(-79px, 0px)'){
+    if(nameId.value == "" | passId.value == "" && loginbtn.style.transform == 'translate(-79px, 0px)'){
         loginbtn.style.transition = 'all 0.3s ease'
         loginbtn.style.transform = 'translate(-80px,0px)'
         loginbtn.style.pointerEvents = "none"
     }
 
-    if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(79px, 0px)'){
+    if(nameId.value == "" | passId.value == "" && loginbtn.style.transform == 'translate(79px, 0px)'){
         loginbtn.style.transition = 'all 0.3s ease'
         loginbtn.style.transform = 'translate(-79px,0px)'
         loginbtn.style.pointerEvents = "none"
     }
 
 
-    if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(-80px, 0px)'){
+    if(nameId.value == "" | passId.value == "" && loginbtn.style.transform == 'translate(-80px, 0px)'){
         loginbtn.style.transition = 'all 0.3s ease'
         loginbtn.style.transform = 'translate(79px,0px)'
         loginbtn.style.pointerEvents = "none"
     }
 
 
-    if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(80px, 0px)'){
+    if(nameId.value == "" | passId.value == "" && loginbtn.style.transform == 'translate(80px, 0px)'){
         loginbtn.style.transition = 'all 0.3s ease'
         loginbtn.style.transform = 'translate(-80px,0px)'
-        console.log(loginbtn.style.transform)
         loginbtn.style.pointerEvents = "none"
+        // console.log(loginbtn.style.transform)
     }
 
 
 
-    if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == ''){
+    if(nameId.value == "" | passId.value == "" && loginbtn.style.transform == '' || loginbtn.style.transform == 'translate(0px, 0px)'){
     loginbtn.style.transition = 'all 0.3s ease'
     loginbtn.style.transform = 'translate(80px,0px)'
     loginbtn.style.pointerEvents = "none"
         // console.log(loginbtn.style.transform)
     }
 
-    if(document.getElementById("audioop").paused){
-        document.getElementById("audioop").play()
-    }
-
-    
-    
-
-
-
-    // if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(80px, 0px)'){
-    //     loginbtn.style.transition = 'all 0.3s ease'
-    //     loginbtn.style.transform = 'translate(-80px,0px)'
-    // }
-
-    // if(nameId.value == "" && passId.value == "" && loginbtn.style.transform == 'translate(-80px, 0px)'){
-    //     loginbtn.style.transition = 'all 0.3s ease'
-    //     loginbtn.style.transform = 'translate(80px,0px)'
-    // }
-
-    
-
-
-    
-
-    // let position;
-    // position ? (position = 0) : (position = 120)
-    // var okk = loginbtn.style.transform = 'translate(80px,0px)'
-    
 }
+
+
+// function pob(){
+
+// }
+
